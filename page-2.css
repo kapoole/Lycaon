@@ -1,0 +1,486 @@
+html{
+   overflow-y: hidden;
+   width: 1920px;
+   height: 10px;;
+    /* position: fixed;
+    width: 100vw;
+    height: 100vh; */
+    background-color: black;
+}
+
+.next-page{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+#background{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-shape{
+    background-color: #1f1137;
+    position: absolute;
+}
+
+#bg-1{
+    width: 100%;
+    height: 300px;
+    clip-path: polygon(62% 70%, 100% 0, 100% 32%, 62% 100%, 0 100%, 0 68%);
+    bottom: 0%;
+}
+
+#bg-2{
+    width: 100%;
+    height: 300px;
+    clip-path: polygon(21% 0, 62% 70%, 100% 0%, 100% 32%, 62% 100%, 0 100%, 0 68%);
+    bottom: 12%;
+}
+
+#bg-3{
+    width: 500px;
+    height: 500px;
+    clip-path: polygon(0 0, 60% 20%, 60% 80%, 0% 100%);
+    bottom: 35%;
+    left: 4%;
+    transform: rotate(20deg);
+
+}
+
+#lycaon{
+    width: 560px;
+    height: 590px;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 20%;
+    
+    bottom: 0%;
+    /*  
+    width: 560px;
+    height(full): 1120px 
+    height(cut): 590px
+    bg-color: palegoldenrod
+    */
+}
+
+#zeus{
+    width: 560px;
+    height: 590px;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 30%;
+    bottom: 10%;
+    transform: rotateY(180deg) scale(1.4);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-item {
+
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.triangle{
+    background-color: #b66b3e;
+    position: absolute;
+}
+
+#tri-1{
+    width: 35px; /* 35px / 560px = 6.25%*/
+    height: 0;
+    padding-bottom: 35px; /* same as width */
+    clip-path: polygon(100% 21%, 0 88%, 100% 100%);
+    left: 135px; /* 135px / 560px = 24.107142% */
+    top: 15px; /* 15px / 1120px = 1.339285%*/
+    
+}
+
+#tri-2{
+    width: 100px; /* 100px / 560px = 17.857142%*/
+    height: 0;
+    padding-bottom: 100px; /* same as width */
+    clip-path: polygon(5% 0%, 0 25%, 100% 28%);
+    left: 173px; /* 173px / 560px = 30.892857%*/
+    top: 24px; /* 24px / 1120px = 2.142857 */
+    
+}
+
+#tri-3{
+    width: 87px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 87px; /* same as width */
+    clip-path: polygon(0 0, 6% 57%, 100% 12%);
+    left: 127px; /* filler / 560px */
+    top: 50px; /* filler / 1120px */
+    
+}
+
+#tri-4{
+    width: 50px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 50px; /* same as width */
+    clip-path: polygon(0 100%, 12% 25%, 100% 18%);
+    left: 222px; /* filler / 560px */
+    top: 45px; /* filler / 1120px */
+    
+}    
+
+#tri-5{
+    width: 95px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 95px; /* same as width */
+    clip-path: polygon(13% 43%, 93% 4%, 78% 100%);
+    left: 130px; /* filler / 560px */
+    top: 63px; /* filler / 1120px */
+    
+}
+
+#tri-6{
+    width: 130px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 130px; /* same as width */
+    clip-path: polygon(48% 70%, 57% 10%, 63% 89%);
+    left: 50px; /* filler / 560px */
+    top: 50px; /* filler / 1120px */
+    
+}
+
+#tri-7{
+    width: 90px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 90px; /* same as width */
+    clip-path: polygon(0 100%, 0 35%, 67% 95%);
+    left: 135px; /* filler / 560px */
+    top: 75px; /* filler / 1120px */
+    
+}
+
+#tri-8{
+    width: 110px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 110px; /* same as width */
+    clip-path: polygon(1% 63%, 69% 52%, 100% 65%);
+    left: 130px; /* filler / 560px */
+    top: 105px; /* filler / 1120px */
+    
+}
+
+#tri-9{
+    width: 80px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 80px; /* same as width */
+    clip-path: polygon(27% 30%, 18% 91%, 78% 71%);
+    left: 195px; /* filler / 560px */
+    top: 90px; /* filler / 1120px */
+    
+}
+
+#tri-10{
+    width: 80px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 80px; /* same as width */
+    clip-path: polygon(51% 13%, 13% 47%, 55% 34%);
+    left: 230px; /* filler / 560px */
+    top: 53px; /* filler / 1120px */
+    
+}
+
+#tri-11{
+    width: 80px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 80px; /* same as width */
+    clip-path: polygon(51% 13%, 11% 25%, 48% 34%);
+    left: 230px; /* filler / 560px */
+    top: 75px; /* filler / 1120px */
+    
+}
+
+#tri-12{
+    width: 90px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 90px; /* same as width */
+    clip-path: polygon(53% 36%, 14% 16%, 42% 63%);
+    left: 225px; /* filler / 560px */
+    top: 83px; /* filler / 1120px */
+    
+}
+
+#tri-13{
+    width: 80px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 80px; /* same as width */
+    clip-path: polygon(39% 20%, 20% 46%, 58% 73%);
+    left: 200px; /* filler / 560px */
+    top: 75px; /* filler / 1120px */
+    
+}
+
+#tri-14{
+    width: 100px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 100px; /* same as width */
+    clip-path: polygon(62% 21%, 0 20%, 59% 48%);
+    left: 140px; /* filler / 560px */
+    top: 163px; /* filler / 1120px */
+    
+}
+
+#tri-15{
+    width: 100px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 100px; /* same as width */
+    clip-path: polygon(61% 55%, 0 55%, 6% 25%);
+    left: 135px; /* filler / 560px */
+    top: 163px; /* filler / 1120px */
+    
+}
+
+#tri-16{
+    width: 100px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 100px; /* same as width */
+    clip-path: polygon(40% 13%, 0 97%, 100% 22%);
+    left: 95px; /* filler / 560px */
+    top: 210px; /* filler / 1120px */
+    
+}
+
+#tri-17{
+    width: 150px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 150px; /* same as width */
+    clip-path: polygon(25% 40%, 44% 80%, 56% 20%);
+    left: 60px; /* filler / 560px */
+    top: 250px; /* filler / 1120px */
+    
+}
+
+#tri-18{
+    width: 140px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 140px; /* same as width */
+    clip-path: polygon(58% 42%, 24% 87%, 37% 3%);
+    left: 40px; /* filler / 560px */
+    top: 315px; /* filler / 1120px */
+    
+}
+
+#tri-19{
+    width: 110px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 110px; /* same as width */
+    clip-path: polygon(63% 100%, 12% 69%, 66% 1%);
+    left: 60px; /* filler / 560px */
+    top: 365px; /* filler / 1120px */
+    
+}
+
+#tri-20{
+    width: 290px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 290px; /* same as width */
+    clip-path: polygon(32% 82%, 61% 53%, 34% 20%);
+    left: 45px; /* filler / 560px */
+    top: 250px; /* filler / 1120px */
+    
+}
+
+#tri-21{
+    width: 290px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 290px; /* same as width */
+    clip-path: polygon(46% 26%, 35% 34%, 53% 61%);
+    left: 64px; /* filler / 560px */
+    top: 160px; /* filler / 1120px */
+    
+}
+
+#tri-22{
+    width: 290px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 290px; /* same as width */
+    clip-path: polygon(33% 39%, 34% 49%, 47% 50%);
+    left: 100px; /* filler / 560px */
+    top: 165px; /* filler / 1120px */
+    
+}
+
+#tri-23{
+    width: 290px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 290px; /* same as width */
+    clip-path: polygon(45% 36%, 35% 44%, 49% 48%);
+    left: 40px; /* filler / 560px */
+    top: 160px; /* filler / 1120px */
+    
+}
+
+#tri-24{
+    width: 290px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 290px; /* same as width */
+    clip-path: polygon(46% 9%, 33% 6%, 49% 28%);
+    left: 50px; /* filler / 560px */
+    top: 280px; /* filler / 1120px */
+}
+
+#tri-25{
+    width: 290px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 290px; /* same as width */
+    clip-path: polygon(26% 37%, 22% 13%, 38% 37%);
+    left: 122px; /* filler / 560px */
+    top: 260px; /* filler / 1120px */
+}
+
+#tri-26{
+    width: 290px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 290px; /* same as width */
+    clip-path: polygon(45% 86%, 19% 61%, 34% 61%);
+    left: 145px; /* filler / 560px */
+    top: 195px; /* filler / 1120px */
+}
+
+#tri-27{
+    width: 290px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 290px; /* same as width */
+    clip-path: polygon(35% 76%, 31% 66%, 44% 65%);
+    left: 177px; /* filler / 560px */
+    top: 220px; /* filler / 1120px */
+}
+
+#tri-28{
+    width: 290px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 290px; /* same as width */
+    clip-path: polygon(24% 78%, 33% 66%, 47% 71%);
+    left: 210px; /* filler / 560px */
+    top: 220px; /* filler / 1120px */
+}
+
+#tri-29{
+    width: 290px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 290px; /* same as width */
+    clip-path: polygon(31% 81%, 21% 75%, 51% 72%);
+    left: 260px; /* filler / 560px */
+    top: 190px; /* filler / 1120px */
+}
+
+#tri-30{
+    width: 290px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 290px; /* same as width */
+    clip-path: polygon(41% 95%, 19% 79%, 33% 79%);
+    left: 155px; /* filler / 560px */
+    top: 85px; /* filler / 1120px */
+}
+
+#tri-31{
+    width: 290px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 290px; /* same as width */
+    clip-path: polygon(37% 77%, 33% 65%, 41% 69%);
+    left: 167px; /* filler / 560px */
+    top: 135px; /* filler / 1120px */
+}
+
+#tri-32{
+    width: 290px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 290px; /* same as width */
+    clip-path: polygon(41% 83%, 45% 74%, 59% 85%);
+    left: 160px; /* filler / 560px */
+    top: 122px; /* filler / 1120px */
+}
+#tri-33{
+    width: 290px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 290px; /* same as width */
+    clip-path: polygon(40% 74%, 45% 66%, 56% 70%);
+    left: 215px; /* filler / 560px */
+    top: 160px; /* filler / 1120px */
+}
+
+#tri-34{
+    width: 290px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 290px; /* same as width */
+    clip-path: polygon(47% 16%, 27% 39%, 37% 71%);
+    left: 70px; /* filler / 560px */
+    top: 380px; /* filler / 1120px */
+}
+
+#tri-35{
+    width: 290px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 290px; /* same as width */
+    clip-path: polygon(35% 40%, 27% 35%, 43% 73%);
+    left: 40px; /* filler / 560px */
+    top: 380px; /* filler / 1120px */
+}
+
+#tri-36{
+    width: 290px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 290px; /* same as width */
+    clip-path: polygon(40% 45%, 24% 35%, 33% 69%);
+    left: 0px; /* filler / 560px */
+    top: 350px; /* filler / 1120px */
+}
+
+#tri-37{
+    width: 290px; /* filler / 560px */
+    height: 0;
+    padding-bottom: 290px; /* same as width */
+    clip-path: polygon(52% 78%, 39% 47%, 31% 78%);
+    left: 5px; /* filler / 560px */
+    top: 360px; /* filler / 1120px */
+}
+
+#plate{
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    position: absolute;
+    left: 39%;
+    bottom: 15%;
+
+}
+
+#cir-plate{
+    width: 250px;
+    height: 0;
+    padding-bottom: 250px;
+    clip-path: ellipse(38% 9% at 49% 46%);
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: -25%;
+
+}
+
+#tri-food{
+    width: 110px;
+    height: 0;
+    padding-bottom: 110px;
+    clip-path: polygon(79% 76%, 84% 64%, 95% 54%, 100% 42%, 100% 100%, 50% 100%, 59% 91%, 71% 80%);
+    background-color: #8e4b32;
+    position: absolute;
+    top: 10%;
+    left: -8%;
+}
